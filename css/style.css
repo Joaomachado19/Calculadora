@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+    .conteiner{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: minmax(50px, auto) repeat(5,50px)
+}
+
+.conteiner button{
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+}
+.operador{
+    grid-column: span 1;
+}
+#clear{
+    grid-column: span 2;
+}
+#zero{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1/-1;
+    background-color: #000;
+    margin-bottom: 10px;
+    height: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+#tela{
+    color: #fff;
+    font-size: 2rem;
+}
+
+#divisao{
+    background-color: #0DB2AC;
+}
+#vezes{
+    background-color: #B80090;
+}
+#mais{
+    background-color: #F99400;
+}
+#menos{
+    background-color: #F00A5E;
+}
+#igual{
+    background-color: #B0DA09;
+    height: 6.3rem;
+}
+
