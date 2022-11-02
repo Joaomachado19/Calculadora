@@ -1,63 +1,224 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-
-    .conteiner{
+body {
+  background-color: aquamarine;
+}
+@media screen and (max-width: 800px) {
+  .conteiner {
     display: grid;
     justify-content: center;
     align-content: center;
     min-height: 100vh;
-    grid-template-columns: repeat(4,50px);
-    grid-template-rows: minmax(50px, auto) repeat(5,50px)
-}
+    width: 100vw;
+    grid-template-columns: repeat(4, 10vw);
+    grid-template-rows: minmax(50px, auto) repeat(5, 10vw);
+  }
 
-.conteiner button{
+  .conteiner button {
     background-color: #000;
     color: #fff;
     font-size: 1.5rem;
     border: none;
-}
-.operador{
+    cursor: pointer;
+  }
+  .conteiner button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .operador {
     grid-column: span 1;
-}
-#clear{
+  }
+  #clear {
     grid-column: span 2;
-}
-#zero{
+  }
+  #zero {
     grid-column: span 2;
-}
-.output{
+  }
+  .output {
     grid-column: 1/-1;
-    background-color: #000;
+    background-color: #6495ed;
     margin-bottom: 10px;
-    height: 4em;
+    height: 7vh;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
     word-wrap: break-word;
     word-break: break-all;
-}
-#tela{
+  }
+  .numeroAtual {
     color: #fff;
     font-size: 2rem;
-}
+    font-family: "Prompt", sans-serif;
+  }
+  .numeroAnterior {
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Prompt", sans-serif;
+  }
 
-#divisao{
-    background-color: #0DB2AC;
-}
-#vezes{
-    background-color: #B80090;
-}
-#mais{
-    background-color: #F99400;
-}
-#menos{
-    background-color: #F00A5E;
-}
-#igual{
-    background-color: #B0DA09;
-    height: 6.3rem;
-}
+  #divisao {
+    background-color: #0db2ac;
+  }
 
+  #vezes {
+    background-color: #b80090;
+  }
+  #mais {
+    background-color: #f99400;
+  }
+  #menos {
+    background-color: #f00a5e;
+  }
+  #igual {
+    background-color: #b0da09;
+    height: 15.2vh;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .conteiner {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    grid-template-columns: repeat(4, 10vw);
+    grid-template-rows: minmax(50px, auto) repeat(5, 10vw);
+  }
+
+  .conteiner button {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  .conteiner button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .operador {
+    grid-column: span 1;
+  }
+  #clear {
+    grid-column: span 2;
+  }
+  #zero {
+    grid-column: span 2;
+  }
+  .output {
+    grid-column: 1/-1;
+    background-color: #6495ed;
+    margin-bottom: 10px;
+    height: 10vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  .numeroAtual {
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Prompt", sans-serif;
+  }
+  .numeroAnterior {
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Prompt", sans-serif;
+  }
+  #divisao {
+    background-color: #0db2ac;
+  }
+
+  #vezes {
+    background-color: #b80090;
+  }
+  #mais {
+    background-color: #f99400;
+  }
+  #menos {
+    background-color: #f00a5e;
+  }
+  #igual {
+    background-color: #b0da09;
+    height: 21.4vh;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .conteiner {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    grid-template-columns: repeat(4, 5vw);
+    grid-template-rows: minmax(50px, auto) repeat(5, 5vw);
+  }
+
+  .conteiner button {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  .conteiner button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .operador {
+    grid-column: span 1;
+  }
+  #clear {
+    grid-column: span 2;
+  }
+  #zero {
+    grid-column: span 2;
+  }
+  .output {
+    grid-column: 1/-1;
+    background-color: #6495ed;
+    margin-bottom: 10px;
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  .numeroAtual {
+    color: #fff;
+    font-size: 5rem;
+    font-family: "Prompt", sans-serif;
+  }
+  .numeroAnterior {
+    color: #fff;
+    font-size: 4rem;
+    font-family: "Prompt", sans-serif;
+  }
+  #divisao {
+    background-color: #0db2ac;
+  }
+
+  #vezes {
+    background-color: #b80090;
+  }
+  #mais {
+    background-color: #f99400;
+  }
+  #menos {
+    background-color: #f00a5e;
+  }
+  #igual {
+    background-color: #b0da09;
+    height: 26.4vh;
+  }
+}
