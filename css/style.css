@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -40,7 +41,7 @@ body {
     grid-column: 1/-1;
     background-color: #6495ed;
     margin-bottom: 10px;
-    height: 13vh;
+    height: 20vh;
     width: 40vw;
     display: flex;
     flex-direction: column;
@@ -75,7 +76,7 @@ body {
   }
   #igual {
     background-color: #b0da09;
-    height: 18.1vh;
+    height: 28.1vh;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1920px) {
@@ -85,8 +86,8 @@ body {
     align-content: center;
     min-height: 100vh;
     width: 100vw;
-    grid-template-columns: repeat(4, 10vw);
-    grid-template-rows: minmax(50px, auto) repeat(5, 10vw);
+    grid-template-columns: repeat(4, 6vw);
+    grid-template-rows: minmax(10vw, auto) repeat(5, 6vw);
   }
 
   .conteiner button {
@@ -113,8 +114,8 @@ body {
     grid-column: 1/-1;
     background-color: #6495ed;
     margin-bottom: 10px;
-    height: 10vh;
-    width: 40vw;
+    height: 20vh;
+    width: 24vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -147,7 +148,7 @@ body {
   }
   #igual {
     background-color: #b0da09;
-    height: 21.4vh;
+    height: 26.3vh;
   }
 }
 @media screen and (min-width: 2000px) and (max-width: 2560px) {
